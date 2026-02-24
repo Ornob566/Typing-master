@@ -1,9 +1,5 @@
 # Typing Master — Raylib C Project
 
-## 1. Detailed AI Generation Prompt
-
-If you wanted to generate this exact program from scratch using an AI, this is the most effective prompt to use:
-
 **Prompt:**
 
 > "Develop a C program using the Raylib library for a 'Typing Master' clone.
