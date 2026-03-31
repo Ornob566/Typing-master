@@ -44,7 +44,7 @@
 
 ## 1. Project Overview
 
-**Typing Master Pro** is a keyboard typing speed game built with C and the [Raylib](https://www.raylib.com/) library. Players type displayed text across three progressively harder levels, and the game measures their Words Per Minute (WPM) and accuracy.
+**Typing Master** is a keyboard typing speed game built with C and the [Raylib](https://www.raylib.com/) library. Players type displayed text across three progressively harder levels, and the game measures their Words Per Minute (WPM) and accuracy.
 
 This repository contains a complete **SOLID-based refactor** of the original monolithic `main.c` into a clean, modular, multi-file C project. Gameplay is **100% identical** — only the code architecture has changed.
 
