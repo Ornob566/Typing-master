@@ -1,4 +1,4 @@
-# Typing Master Pro — SOLID Refactor
+# Typing Master — SOLID Refactor
 
 > **Branch:** `solid-refactor` | **Original:** `trunk` | **Language:** C + Raylib
 
