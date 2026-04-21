@@ -56,7 +56,7 @@ TypingMasterPro/
 │   ├── FileLevelLoader.cpp
 │   └── WpmStatsCalculator.cpp
 │
-├── include/                   ← All .h header files
+├── headers/                   ← All .h header files
 │   ├── IRenderer.h            ← Interface (ISP)
 │   ├── IInputHandler.h        ← Interface (ISP)
 │   ├── ILevelLoader.h         ← Interface (OCP + DIP)
@@ -74,12 +74,6 @@ TypingMasterPro/
 ├── assets/
 │   └── bg.jpg                 ← Background image (add your own)
 │
-├── levels/
-│   ├── level1.txt
-│   ├── level2.txt
-│   └── level3.txt
-│
-├── CMakeLists.txt
 └── README.md
 ```
 
