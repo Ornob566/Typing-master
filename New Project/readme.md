@@ -47,29 +47,18 @@ TypingMasterPro/
 ├── src/                       ← All .cpp implementation files
 │   ├── main.cpp
 │   ├── GameManager.cpp
-│   ├── UIManager.cpp
+│   ├── UIRenderer.cpp
 │   ├── InputHandler.cpp
-│   ├── StateManager.cpp
-│   ├── LevelManager.cpp
-│   ├── TimerManager.cpp
-│   ├── StatsManager.cpp
-│   ├── FileLevelLoader.cpp
-│   └── WpmStatsCalculator.cpp
+│   ├── LevelLoader.cpp
+│   ├── Timer.cpp
+│   ├── Stats.cpp
 │
-├── headers/                   ← All .h header files
-│   ├── IRenderer.h            ← Interface (ISP)
-│   ├── IInputHandler.h        ← Interface (ISP)
-│   ├── ILevelLoader.h         ← Interface (OCP + DIP)
-│   ├── IStatsCalculator.h     ← Interface (OCP + ISP)
-│   ├── GameManager.h
-│   ├── UIManager.h
-│   ├── InputHandler.h
-│   ├── StateManager.h
-│   ├── LevelManager.h
-│   ├── TimerManager.h
-│   ├── StatsManager.h
-│   ├── FileLevelLoader.h
-│   └── WpmStatsCalculator.h
+├── headers/                   ← All .h header files            ← Interface (ISP)
+│   ├── GameManager.hpp       ← Interface (ISP)
+│   ├── Istate.hpp        ← Interface (OCP + DIP)
+│   ├── StatsManager.hpp     ← Interface (OCP + ISP)
+│   ├── UIRenderer.hpp
+│   ├── Common.hpp
 │
 ├── assets/
 │   └── bg.jpg                 ← Background image (add your own)
