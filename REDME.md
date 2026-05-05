@@ -1,4 +1,3 @@
-
 # Typing Master
 ### MVC Edition — Typing Speed Testing Game
 
@@ -47,6 +46,10 @@ Typing-master/
 │   │   └── GameModel.cpp      <- Game data & business logic
 │   └── View/
 │       └── GameView.cpp       <- All rendering / drawing
+│
+├── Runnable Program/          <- ONE-CLICK build and run scripts
+│   ├── build_and_run.bat      <- For Windows
+│   └── build_and_run.sh       <- For Linux / macOS
 │
 ├── Others/
 │   └── CMakeLists.txt         <- Build configuration
@@ -118,7 +121,54 @@ MENU --> COUNTDOWN --> PLAYING --> LEVEL_RESULT --> FINAL
 
 ---
 
-## How to Build and Run
+## How to Run (Quickest Way)
+
+### The `Runnable Program` folder contains ready-made scripts that automatically install dependencies, compile the project, and launch the game — all in one step.
+
+---
+
+### Windows — use `build_and_run.bat`
+
+**Step 1** — Open the `Runnable Program` folder
+
+**Step 2** — Double-click `build_and_run.bat`
+
+OR run it from terminal:
+
+```bat
+cd "Runnable Program"
+build_and_run.bat
+```
+
+The script will:
+- Check if g++ is installed
+- Automatically download Raylib 5.0 if not found
+- Compile all source files
+- Launch `TypingMaster.exe`
+
+---
+
+### Linux / macOS — use `build_and_run.sh`
+
+**Step 1** — Open a terminal in the project folder
+
+**Step 2** — Run:
+
+```bash
+cd "Runnable Program"
+chmod +x build_and_run.sh
+./build_and_run.sh
+```
+
+The script will:
+- Detect your OS (Ubuntu, Arch, Fedora, macOS)
+- Auto-install Raylib if missing
+- Compile all source files
+- Launch the game
+
+---
+
+## How to Build Manually (Without Scripts)
 
 ### Requirements
 
@@ -133,7 +183,7 @@ MENU --> COUNTDOWN --> PLAYING --> LEVEL_RESULT --> FINAL
 **Step 1 — Install MSYS2**
 
 Download from: https://www.msys2.org
-Run the installer, then open **MSYS2 MinGW 64-bit** terminal.
+Open **MSYS2 MinGW 64-bit** terminal.
 
 **Step 2 — Install tools**
 
@@ -172,15 +222,6 @@ cd build
 ```bash
 sudo apt update
 sudo apt install g++ cmake libraylib-dev
-```
-
-If `libraylib-dev` is not available, build raylib from source:
-
-```bash
-sudo apt install libgl1-mesa-dev libx11-dev libxi-dev libxcursor-dev
-git clone --depth 1 --branch 5.0 https://github.com/raysan5/raylib.git
-cmake -S raylib -B raylib/build -DBUILD_EXAMPLES=OFF
-sudo cmake --build raylib/build --target install
 ```
 
 **Step 2 — Clone and checkout MVC branch**
